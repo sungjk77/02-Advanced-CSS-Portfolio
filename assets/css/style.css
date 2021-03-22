@@ -1,0 +1,137 @@
+:root {
+    /* declare a variable with `--` syntax */
+    --textcolor: #fff;
+    --radius: 50px;
+    --bgcolor0: #021c1e;
+    --bgcolor1: #004445;
+    --bgcolor2: #2c7873;
+    --bgcolor3: #6fb98f;
+}
+  
+body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+  background: var(--bgcolor0);
+  /* background: linear-gradient(#403d52, #9198e5); */
+}
+
+header {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: var(--bgcolor1);
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 150%;
+  margin-bottom: 10px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
+  
+nav a {
+  color: #b9c6ae;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+intro {
+  /* display:flex; */
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px;
+  color: #b9c6ae;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+  text-align: center;
+  background:var(--bgcolor1);
+  color:white;
+  margin-top: auto;
+}
+
+a {
+  color:white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--bgcolor3)
+}
+
+img {
+  opacity: 50%;
+}
+.card {
+    width: 80%;
+    height:275px;
+    border-style:solid;
+    border-width: 1px;
+    padding: 20px;
+    margin: 20px;
+    flex: 0 0 500px;
+    /* box-shadow: 5px 10px 10px #888888; */
+}
+
+.card:hover {
+    color: var(--bgcolor3);
+    border-width: 3px;
+    text-size-adjust: 150%;
+}
+
+.content {
+    display:block;
+    color: black;
+    background-color: lightgray;
+ }
+
+ .card header {
+    position:relative;
+    top:-40px;
+    width:200px;
+    height:25px;
+    padding: 20px;
+    background: var(--bgcolor0);
+}
+  
+.card p {
+    text-align: center;
+  }
+
+
+#contact {
+  position:relative;
+  display:inline;
+  text-align: right;
+}
+#section {
+  color: white;
+  padding: 50px;
+}
+#social:hover img {
+  opacity:100%;
+}
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
