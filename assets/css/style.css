@@ -5,7 +5,10 @@
   --bgcolor2: #2c7873;
   --bgcolor3: #6fb98f;
 }
-  
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
